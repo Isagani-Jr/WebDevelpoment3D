@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE LAYOUT STRUCTURE</title>
+    <link rel="stylesheet" href="../css/customstyle.css">
+
+</head>
+<body>
+    <header>
+        <br>
+        <div>
+            <h1>COLLEGE OF INFORMATION AND COMPUTING SCIENCES 🏫</h1>
+            <h2>BACHELOR OF SCIENCE IN INFORMATION SYSTEM 🎓</h2>
+            <br>
+        </div>
+        <hr>
+        <div class="container">
+            <a href="../Index.html">HOME</a> |
+            <a href="../pages/about.html">ABOUT</a> |
+            <a href="../pages/contactus.html">CONTACT US</a> |
+            <a href="../pages/inquiry.html">INQUIRY</a> |
+            <a href="../pages/profile.html">PROFILE</a> |
+            <button id="submit_btn"><a href="../pages/login.html" style="color: black;">Login</a></button>
+        </div>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="heading.html">Heading</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="table.html">Table</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="form.html">Form</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="list.html">Lists</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="ImageGifVideo.html">Image</a>
+                </li>
+            </ul>
+        </nav>
+
+        <article>
+            <!-- Flex container to hold the forms -->
+            <div class="form-container">
+                <!-- Form 1 -->
+                <div class="form1">
+                    <h6>
+                        <form action="list.html" method="get">
+                            <fieldset>
+                                <legend><h2>SIMPLE FORM</h2></legend>
+                                <fieldset>
+                                    <label for="">FirstName</label>
+                                    <input type="text" name="fname" id="fname">
+                                    <br>
+                                    <label for="">LastName</label>
+                                    <input type="text" name="lname" id="lname">
+                                    <br>
+                                    <label for="">Date: </label>
+                                    <input type="date" name="datenow" id="datenow" required>
+                                    <br>
+                                    <label for="">Email: </label>
+                                    <input type="email" name="emailAdd" id="emailAdd" required>
+                                    <br>
+                                    <label for="">Button</label>
+                                    <input type="button" value="Example">
+                                    <br> 
+                                    <label for="">Color: </label>
+                                    <input type="color" name="colorname" id="colorname" required>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="">Date Time Data:</label>
+                                    <input type="datetime" name="datetimeData" id="datetimeData">
+                                    <br>
+                                    <label for="">Password: </label>
+                                    <input type="password" name="passwordData" id="passwordData">
+                                    <br>
+                                    <label for="">Selection: </label>
+                                    <select name="" id="">
+                                        <option value="" disabled selected>--Choose a Fruit--</option>
+                                        <option value="">Ubas</option>
+                                        <option value="">Rambutan</option>
+                                        <option value="">Santol</option>
+                                        <option value="">Pinya</option>
+                                    </select>
+                                    <br>
+                                    <button disabled>Disabled Button</button>
+                                </fieldset>
+                            </fieldset>
+                            <br>
+                        </form>
+                    </h6>
+                </div>
+
+                <!-- Form 2 -->
+                <div class="form2">
+                    <fieldset>
+                        <fieldset>
+                            <input type="radio" id='english'>
+                            <label for="english">English</label>
+                            <input type="radio" id='english'>
+                            <label for="english">Hindi</label>
+                            <input type="radio" id='english'>
+                            <label for="english">Telegu</label>
+                        </fieldset>
+                        <fieldset>
+                            <textarea name="" id="" value="Please Input Your Message" placeholder="Please Input Your Message Here....."></textarea>
+                        </fieldset>
+                        <fieldset>
+                        <label for="">Data Lists: </label>
+                        <input list="values" name="answer">
+                        <datalist id="values">
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="C#">C#</option>
+                            <option value="PHP">PHP</option>
+                        </datalist>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                    </fieldset>
+                </div>
+
+                <!-- Form 3 -->
+                <div class="form3">
+                    <form action="form.post.php" method="get">
+                        <fieldset>
+                            <legend>Form Input Data</legend>
+                            <h6>
+                            <fieldset>
+                                <label for="">ENTER YOUR NAME:</label>
+                                <input type="text" name="name" id="name"> <br>
+                                <label for="">ENTER YOUR AGE:</label>
+                                <input type="number" name="age" id="age"> <br>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Upload File:</label>
+                                <input type="file" name="filedata" id="filedata"><br>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Input Month</label>
+                                <input type="month" name="dateMonth" id="dateMonth"> <br>
+                                <label for="">Week</label>
+                                <input type="week" name="dateWeek" id="dateWeek"> <br>
+                                <label for="">Time</label>
+                                <input type="time" name="dateTime" id="dateTime">
+                                <input type="submit" value="submit">
+                            </fieldset>
+                            </h6>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <h2>Tutorialspoint 📚</h2>
+        <div>
+            <a href="../footerButtons/aboutUs.html"> ABOUT US </a>
+            <a href="../footerButtons/termsOfUse.html"> TERMS OF USE </a>
+            <a href="../footerButtons/privacyPolicy.html"> PRIVACY POLICY </a>
+            <a href="../footerButtons/faq's.html"> FAQ'S </a>
+            <a href="../footerButtons/contact.html"> CONTACT </a>
+        </div>
+        <hr>
+        <div>
+            <p>
+                Copyright @ TUTORIALS POINT (INDIA) PRIVATE LIMITED. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
